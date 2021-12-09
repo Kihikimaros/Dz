@@ -1,0 +1,76 @@
+-------------------------------------------------------------------------------
+Test set: HomeWork.ImageTests
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 6, Errors: 2, Skipped: 0, Time elapsed: 11.37 s <<< FAILURE! - in HomeWork.ImageTests
+HomeWork.ImageTests.uploadFileTest2  Time elapsed: 1.166 s  <<< FAILURE!
+java.lang.AssertionError: 
+2 expectations failed.
+JSON path success doesn't match.
+Expected: is <true>
+  Actual: <false>
+
+JSON path data.id doesn't match.
+Expected: is not null
+  Actual: null
+
+	at HomeWork.ImageTests.uploadFileTest2(ImageTests.java:56)
+
+HomeWork.ImageTests.uploadFileTest3  Time elapsed: 0.775 s  <<< FAILURE!
+java.lang.AssertionError: 
+2 expectations failed.
+JSON path success doesn't match.
+Expected: is <true>
+  Actual: <false>
+
+JSON path data.id doesn't match.
+Expected: is not null
+  Actual: null
+
+	at HomeWork.ImageTests.uploadFileTest3(ImageTests.java:73)
+
+HomeWork.ImageTests.uploadFileTest4  Time elapsed: 1.566 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path success doesn't match.
+Expected: is <false>
+  Actual: <true>
+
+	at HomeWork.ImageTests.uploadFileTest4(ImageTests.java:90)
+
+HomeWork.ImageTests.uploadFileTest5  Time elapsed: 0.75 s  <<< FAILURE!
+java.lang.AssertionError: 
+2 expectations failed.
+JSON path success doesn't match.
+Expected: is <true>
+  Actual: null
+
+JSON path data.id doesn't match.
+Expected: is not null
+  Actual: null
+
+	at HomeWork.ImageTests.uploadFileTest5(ImageTests.java:172)
+
+HomeWork.ImageTests.uploadFileImageTest  Time elapsed: 0.893 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <429>.
+
+	at HomeWork.ImageTests.uploadFileImageTest(ImageTests.java:106)
+
+HomeWork.ImageTests.uploadFileImageTest2  Time elapsed: 0.983 s  <<< ERROR!
+java.lang.IllegalArgumentException: Unnamed path parameter cannot be null (path parameter at index 1 is null)
+	at HomeWork.ImageTests.tearDown(ImageTests.java:186)
+
+HomeWork.ImageTests.uploadFileImageTest3  Time elapsed: 0.713 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <429>.
+
+	at HomeWork.ImageTests.uploadFileImageTest3(ImageTests.java:138)
+
+HomeWork.ImageTests.uploadFileImageTest4  Time elapsed: 1.457 s  <<< ERROR!
+io.restassured.internal.http.ResponseParseException: status code: 429, reason phrase: Too Many Requests
+	at HomeWork.ImageTests.uploadFileImageTest4(ImageTests.java:155)
+Caused by: java.net.SocketException: Connection reset
+	at HomeWork.ImageTests.uploadFileImageTest4(ImageTests.java:155)
+
